@@ -28,15 +28,8 @@ window.onload = () => {
   });
 };
 
-///Disable Selection
-function disableselect(e) {
-  return false
-}
 
-document.onselectstart = disableselect
-
-const menu = document.querySelector('.menu');
-const controls = document.querySelector('.controls');
+const menuBtn = document.querySelector('.menu-btn');
 const list = document.querySelector('.main-nav__list');
 const lang = document.querySelector('.lang');
 ///Preload
@@ -45,7 +38,7 @@ window.addEventListener('load', () => {
   setTimeout(function () {
     preload.classList.add('fGhjj');
   }, 1000);
-  controls.classList.remove('active');
+  menuBtn.classList.remove('active');
   list.classList.remove('list-open');
   lang.classList.remove('visable');
 
@@ -54,9 +47,9 @@ window.addEventListener('load', () => {
 ///Menu
 
 
-menu.addEventListener('click', e => {
+menuBtn.addEventListener('click', e => {
   e.preventDefault();
-  controls.classList.toggle('active');
+  menuBtn.classList.toggle('close');
   list.classList.toggle('list-open');
   lang.classList.toggle('visable');
 });

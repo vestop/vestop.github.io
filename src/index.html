@@ -14,14 +14,6 @@
 </head>
 
 <body>
-<div class="preload">
-  <div class="loader"></div>
-</div>
-<div class="cursors">
-  <div class="cursor cursor--small"></div>
-  <canvas class="cursor--canvas"></canvas>
-</div>
-<canvas class="background"></canvas>
 <header class="header">
   <div class="header__inner">
     <nav class="main-nav container">
@@ -51,14 +43,15 @@
           <a class="main-nav__link" href="contacts/">Contact</a>
         </li>
       </ul>
-      <div class="controls">
-        <span class="menu"></span>
-      </div>
+
+      <button class="menu-btn">
+        <span class="menu-btn__line"></span>
+      </button>
     </nav>
   </div>
 </header>
 <main>
-  <section class="intro main-page">
+  <article class="intro main-page">
     <div class="intro__inner container">
       <div class="avatar">
         <img class="intro__image" src="images/avatar.jpg" alt="Javohir Shodiyev">
@@ -70,7 +63,7 @@
       </p>
       <a href="/contacts/" class="intro__btn btn">Hire me</a>
     </div>
-  </section>
+  </article>
 </main>
 <footer class="footer">
   <div class="footer__inner">
@@ -97,6 +90,16 @@
     </div>
   </div>
 </footer>
+
+<div class="preload">
+  <div class="loader"></div>
+</div>
+<div class="cursors">
+  <div class="cursor cursor--small"></div>
+  <canvas class="cursor--canvas"></canvas>
+</div>
+<canvas class="background"></canvas>
+
 <script src="js/libs.min.js"></script>
 <script src="js/index.js"></script>
 </body>
