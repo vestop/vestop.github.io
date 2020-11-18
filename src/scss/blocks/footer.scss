@@ -1,0 +1,35 @@
+.footer {
+  margin-top: auto;
+  background: $black-opacity;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+  }
+  &__social {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  &__social-item {
+    margin-right: 20px;
+    outline: none;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover,
+    &:focus {
+      transform: scale(1.6) translateY(-5px);
+      opacity: 1;
+    }
+  }
+  &__copyright {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.2;
+    text-align: center;
+    opacity: 0.6;
+  }
+}
