@@ -4,10 +4,13 @@
 ::before,
 ::after {
   scrollbar-width: thin;
+  scrollbar-height: thin;
   scrollbar-color: $primary-color $black-opacity;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  user-select: none;
+
   @media ($tablet) {
     cursor: none;
   }
@@ -46,6 +49,8 @@ body {
   font-family: $mont;
   line-height: 1.5;
   background-color: $black;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .background {
   position: fixed;
@@ -159,6 +164,7 @@ body {
 
 ::-webkit-scrollbar {
   width: 4px;
+  height: 4px;
 }
 ::-webkit-scrollbar-track {
   background: transparent;
