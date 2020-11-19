@@ -1,59 +1,50 @@
 ///Particles
 window.onload = () => {
   Particles.init({
-    selector: '.background',
-    color: '#FF6F61',
+    selector: ".background",
+    color: "#FF6F61",
     connectParticles: true,
     maxParticles: 150,
     sizeVariations: 5,
     responsive: [
       {
-        breakpoint:
-          1024
-        ,
+        breakpoint: 1024,
         options: {
-          maxParticles:
-            80
-        }
-      }, {
-        breakpoint:
-          768
-        ,
+          maxParticles: 80,
+        },
+      },
+      {
+        breakpoint: 768,
         options: {
-          maxParticles:
-            30
-        }
-      }
+          maxParticles: 30,
+        },
+      },
     ],
   });
 };
 
-
-const menuBtn = document.querySelector('.menu-btn');
-const list = document.querySelector('.main-nav__list');
-const lang = document.querySelector('.lang');
+const menuBtn = document.querySelector(".menu-btn");
+const list = document.querySelector(".main-nav__list");
+const lang = document.querySelector(".lang");
 ///Preload
-window.addEventListener('load', () => {
-  const preload = document.querySelector('.preload');
+window.addEventListener("load", () => {
+  const preload = document.querySelector(".preload");
   setTimeout(function () {
-    preload.classList.add('fGhjj');
+    preload.classList.add("fGhjj");
   }, 1000);
-  menuBtn.classList.remove('active');
-  list.classList.remove('list-open');
-  lang.classList.remove('visable');
-
+  menuBtn.classList.remove("active");
+  list.classList.remove("list-open");
+  lang.classList.remove("visable");
 });
 
 ///Menu
 
-
-menuBtn.addEventListener('click', e => {
+menuBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  menuBtn.classList.toggle('close');
-  list.classList.toggle('list-open');
-  lang.classList.toggle('visable');
+  menuBtn.classList.toggle("close");
+  list.classList.toggle("list-open");
+  lang.classList.toggle("visable");
 });
-
 
 /// Custom Mouse
 
@@ -63,7 +54,7 @@ let clientY = -100;
 const innerCursor = document.querySelector(".cursor--small");
 
 const initCursor = () => {
-  document.addEventListener('mousemove', e => {
+  document.addEventListener("mousemove", (e) => {
     clientX = e.clientX;
     clientY = e.clientY;
   });
@@ -86,7 +77,7 @@ const initCanvas = () => {
   const canvas = document.querySelector(".cursor--canvas");
   const shapeBounds = {
     width: 75,
-    height: 75
+    height: 75,
   };
   paper.setup(canvas);
   const strokeColor = "#FF6F61dd";
@@ -128,19 +119,14 @@ const initCanvas = () => {
 
   // the draw loop of Paper.js
   // (60fps with requestAnimationFrame under the hood)
-  paper.view.onFrame = event => {
+  paper.view.onFrame = (event) => {
     // using linear interpolation, the circle will move 0.2 (20%)
     // of the distance between its current position and the mouse
     // coordinates per Frame
     lastX = lerp(lastX, clientX, 0.2);
     lastY = lerp(lastY, clientY, 0.2);
     group.position = new paper.Point(lastX, lastY);
-  }
-}
+  };
+};
 
 initCanvas();
-
-
-
-
-
