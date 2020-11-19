@@ -9,7 +9,8 @@
 .main-nav {
   display: flex;
   align-items: center;
-  padding: 0 40px;
+  padding: 5px 40px;
+  position: relative;
 }
 
 .main-nav__link {
@@ -64,11 +65,10 @@
 .lang {
   display: none;
   margin-right: auto;
-  padding: 5px 40px;
 
   &__link {
     display: inline-block;
-    padding: 10px 5px;
+    padding: 5px;
     font-weight: 500;
     font-size: 14px;
   }
@@ -99,12 +99,12 @@
   border: none;
   outline: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     display: none;
   }
 
   &:focus {
-    outline: 1px dashed #ff6f61;
+    outline: 1px dashed rgba(255, 110, 97, 0.5);
   }
 
   &__line {
@@ -148,7 +148,7 @@
     justify-content: center;
     margin: 0;
     padding: 50px;
-    overflow: auto;
+    overflow: scroll;
     background-color: $black;
     visibility: hidden;
     opacity: 0;
@@ -195,12 +195,11 @@
 .lang {
   @media (max-width: 768px) {
     position: fixed;
-    top: 20px;
+    top: 25px;
     left: -100%;
     z-index: 600;
     display: flex;
     margin-right: auto;
-    padding: 0;
     transition: left 0.3s;
 
     & .lang__image {
