@@ -18,7 +18,7 @@
     text-align: center;
   }
   &__desc {
-    max-width: $tablet;
+    max-width: 900px;
     margin-bottom: 30px;
     font-weight: 500;
     font-size: 15px;
@@ -41,10 +41,11 @@
       color: $black;
       background-color: $white;
       border-radius: 30px;
-      transform: scale(0.8);
+      transform: scale(0.9);
     }
   }
 }
+
 @media ($tablet) {
   .intro {
     &__title {

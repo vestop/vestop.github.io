@@ -7,10 +7,10 @@
 }
 
 .main-nav {
+  position: relative;
   display: flex;
   align-items: center;
-  padding: 5px 40px;
-  position: relative;
+  padding: 0 40px;
 }
 
 .main-nav__link {
@@ -147,18 +147,21 @@
     flex-direction: column;
     justify-content: center;
     margin: 0;
-    padding: 50px;
-    overflow: scroll;
+    padding: 50px 80px;
     background-color: $black;
     visibility: hidden;
     opacity: 0;
     transition: 0.5s cubic-bezier(1, 1.5, 0, 1);
   }
+  .nav-item {
+    &:not(:last-child) {
+      border-bottom: 2px solid $gray;
+    }
+  }
   .main-nav__link {
     display: block;
     padding: 25px;
     text-align: center;
-    border-bottom: 2px solid $gray;
 
     &:focus::after,
     &:hover::after {

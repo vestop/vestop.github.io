@@ -4,7 +4,7 @@ const postcss = require("gulp-postcss");
 const rename = require("gulp-rename");
 const replace = require("gulp-replace");
 const htmlmin = require("gulp-htmlmin");
-const uglify = require('gulp-uglify');
+const uglify = require("gulp-uglify");
 const sync = require("browser-sync").create();
 const concat = require("gulp-concat");
 
@@ -39,17 +39,16 @@ exports.styles = styles;
 const styleLibs = () =>
   src("src/libs/css/**/*.css")
     .pipe(postcss([require("postcss-csso")]))
-    .pipe(concat('libs.min.css'))
+    .pipe(concat("libs.min.css"))
     .pipe(dest("dist/css"))
     .pipe(sync.stream());
 
-exports.styleLibs = styleLibs
-
+exports.styleLibs = styleLibs;
 
 //Scripts
 
 const scripts = () =>
-  src('src/js/index.js')
+  src("src/js/index.js")
     // .pipe(uglify())
     // .pipe(concat('index.js'))
     .pipe(dest("dist/js"))
@@ -61,12 +60,12 @@ exports.scripts = scripts;
 
 const JsLibs = () =>
   src([
-    'src/libs/js/paper-core.min.js',
-    'src/libs/js/particles.min.js',
-    'src/libs/js/simplex-noise.min.js',
+    // 'src/libs/js/paper-core.min.js',
+    "src/libs/js/particles.min.js",
+    // 'src/libs/js/simplex-noise.min.js',
   ])
     .pipe(uglify())
-    .pipe(concat('libs.min.js'))
+    .pipe(concat("libs.min.js"))
     .pipe(dest("dist/js"))
     .pipe(sync.stream());
 
@@ -130,7 +129,7 @@ exports.watchChanges = watchChanges;
 // Default
 
 exports.default = series(
-  parallel(html, styles,scripts, JsLibs, styleLibs, copy),
+  parallel(html, styles, scripts, JsLibs, styleLibs, copy),
   paths,
   parallel(watchChanges, server)
 );
