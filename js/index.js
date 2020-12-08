@@ -43,7 +43,7 @@ menuBtn.addEventListener("click", (e) => {
   e.preventDefault();
   menuBtn.classList.toggle("close");
   list.classList.toggle("list-open");
-  lang.classList.toggle("visable");
+  // lang.classList.toggle("visable");
 });
 
 // initCanvas();
