@@ -1,5 +1,6 @@
 {
   "private": true,
+  "homepage": "https://github.com/vestop/vestop.github.io.git",
   "scripts": {
     "start": "gulp",
     "stylelint": "stylelint \"src/**/*.scss\"",
@@ -37,7 +38,7 @@
     "postcss": "^8.1.4",
     "postcss-csso": "^5.0.0",
     "prettier": "^2.1.2",
-    "stylelint": "^13.7.2",
+    "stylelint": "^13.8.0",
     "stylelint-config-airbnb": "0.0.0",
     "stylelint-config-idiomatic-order": "^8.1.0",
     "stylelint-config-prettier": "^8.0.2",
