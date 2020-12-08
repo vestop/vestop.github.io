@@ -48,6 +48,7 @@
     border-radius: 20px;
     outline: none;
     transition: all 0.3s ease;
+    cursor: pointer;
     &:hover,
     &:focus {
       background-color: $primary-color;

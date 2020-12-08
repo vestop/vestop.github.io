@@ -34,7 +34,7 @@ window.addEventListener("load", () => {
   }, 1000);
   menuBtn.classList.remove("active");
   list.classList.remove("list-open");
-  lang.classList.remove("visable");
+  // lang.classList.remove("visable");
 });
 
 ///Menu
@@ -43,7 +43,7 @@ menuBtn.addEventListener("click", (e) => {
   e.preventDefault();
   menuBtn.classList.toggle("close");
   list.classList.toggle("list-open");
-  lang.classList.toggle("visable");
+  // lang.classList.toggle("visable");
 });
 
 // initCanvas();

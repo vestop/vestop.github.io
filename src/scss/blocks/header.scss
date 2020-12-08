@@ -11,6 +11,7 @@
   display: flex;
   align-items: center;
   padding: 0 40px;
+  justify-content: flex-end; //Without Lang Item
 }
 
 .main-nav__link {
@@ -25,7 +26,7 @@
   &::after {
     position: absolute;
     right: 15px;
-    bottom: 0;
+    bottom: -8px;
     left: 15px;
     display: inline-block;
     height: 3px;
@@ -90,11 +91,11 @@
   top: 20px;
   right: 20px;
   z-index: 999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
+  cursor: pointer;
+
+  width: 35px;
+  height: 35px;
+  display: inline-block;
   background-color: transparent;
   border: none;
   outline: none;
@@ -103,37 +104,64 @@
     display: none;
   }
 
-  &:focus {
-    outline: 1px dashed rgba(255, 110, 97, 0.5);
-  }
-
-  &__line {
-    position: relative;
+  &:focus,
+  &:hover {
+    opacity: 0.8;
   }
 }
-
+.menu-btn__line {
+  display: block;
+  margin-top: 3px;
+  top: 2px;
+  transition: background-color 0s linear 0.13s;
+}
 .menu-btn__line,
 .menu-btn__line::before,
 .menu-btn__line::after {
-  width: 30px;
+  position: absolute;
+  width: 35px;
   height: 3px;
   background-color: #fff;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 .menu-btn__line::before,
 .menu-btn__line::after {
-  position: absolute;
-  left: 0;
+  display: block;
   content: "";
 }
 
 .menu-btn__line::before {
-  top: -7px;
+  top: 8px;
+  transition: top 0.1s cubic-bezier(0.33333, 0.66667, 0.66667, 1) 0.2s,
+    transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .menu-btn__line::after {
-  top: 7px;
+  top: 16px;
+  transition: top 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1) 0.2s,
+    transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.menu-btn.close {
+  .menu-btn__line {
+    background-color: transparent;
+    transition-delay: 0.22s;
+  }
+
+  .menu-btn__line::before {
+    top: 0;
+    transition: top 0.1s cubic-bezier(0.33333, 0, 0.66667, 0.33333) 0.15s,
+      transform 0.13s cubic-bezier(0.215, 0.61, 0.355, 1) 0.22s;
+    transform: translate3d(0, 10px, 0) rotate(45deg);
+  }
+
+  .menu-btn__line::after {
+    top: 0;
+    transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
+      transform 0.13s cubic-bezier(0.215, 0.61, 0.355, 1) 0.22s;
+    transform: translate3d(0, 10px, 0) rotate(-45deg);
+  }
 }
 
 @media (max-width: 768px) {
@@ -162,6 +190,7 @@
     display: block;
     padding: 25px;
     text-align: center;
+    cursor: pointer;
 
     &:focus::after,
     &:hover::after {

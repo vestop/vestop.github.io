@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   &__inner {
-    padding: 20px;
+    padding: 20px 0;
   }
   &__list {
     display: flex;
@@ -22,6 +22,7 @@
       white-space: nowrap;
       background-color: $primary-color;
       border-radius: 10px;
+      cursor: pointer;
     }
   }
   &__title {
