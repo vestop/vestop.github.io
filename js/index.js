@@ -4,7 +4,7 @@ window.onload = () => {
     selector: ".background",
     color: "#FF6F61",
     connectParticles: true,
-    maxParticles: 150,
+    maxParticles: 100,
     sizeVariations: 5,
     responsive: [
       {
