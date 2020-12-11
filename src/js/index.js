@@ -1,5 +1,6 @@
 ///Particles
 window.onload = () => {
+  const audio = document.querySelector("audio");
   Particles.init({
     selector: ".background",
     color: "#FF6F61",
@@ -45,5 +46,3 @@ menuBtn.addEventListener("click", (e) => {
   list.classList.toggle("list-open");
   // lang.classList.toggle("visable");
 });
-
-// initCanvas();
