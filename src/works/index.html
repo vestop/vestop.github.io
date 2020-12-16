@@ -14,6 +14,7 @@
 </head>
 
 <body>
+  <!--- =====  HEADER  ===== -->
   <header class="header">
     <nav class="main-nav container">
       <a href="/" class="logo">
@@ -41,11 +42,126 @@
       </button>
     </nav>
   </header>
+  <!--- =====  MAIN  ===== -->
   <main class="main-page container">
     <section class="works">
       <h3 class="works__title title">Latest Projects</h3>
+
+      <!--- =====  WORKS TAB  ===== -->
+      <div class="works__tabs">
+        <button class="works__tab works__tab--active latest">All</button>
+        <button class="works__tab component">Components</button>
+        <button class="works__tab real">Real Projects</button>
+      </div>
+
+      <!--- =====  WORKS CONTAINER  ===== -->
       <ul class="works__list">
-        <!--- ===    WORK ITEM    === -->
+        <!--- =====  WORK ITEM  ===== -->
+        <li class="works__item">
+          <div class="works__link">
+            <img src=" ../images/projects/react-ecommerce.jpg" class="works__image" alt="E-commerce" />
+            <div class="works__active">
+              <a class="works__active-link" href="https://vestop.github.io/e-commerce/" target="_blank">Visit</a>
+              <a class="works__active-link" href="https://github.com/vestop/e-commerce/" target="_blank">Sources</a>
+            </div>
+          </div>
+          <div class="works__desc">
+            <h4 class="works__name">E-commerce React Website</h4>
+            <p class="works__type">Template</p>
+            <div class="works__tags">
+              <span class="works__tag">REACT</span>
+              <span class="works__tag">Responsive</span>
+              <span class="works__tag">JSX</span>
+              <span class="works__tag">Commerce.js</span>
+            </div>
+          </div>
+        </li>
+        <!--- =====  WORK ITEM  ===== -->
+        <li class="works__item">
+          <div class="works__link">
+            <img src=" ../images/projects/react-pizza.jpg" class="works__image" alt="Pizza" />
+            <div class="works__active">
+              <a class="works__active-link" href="https://vestop.github.io/react-pizza-website/" target="_blank">Visit</a>
+              <a class="works__active-link" href="https://github.com/vestop/react-pizza-website/" target="_blank">Sources</a>
+            </div>
+          </div>
+          <div class="works__desc">
+            <h4 class="works__name">Pizza React Website</h4>
+            <p class="works__type">Template</p>
+            <div class="works__tags">
+              <span class="works__tag">REACT</span>
+              <span class="works__tag">Responsive</span>
+            </div>
+          </div>
+        </li>
+        <!--- =====  WORK ITEM  ===== -->
+        <li class="works__item" data-comp="comp">
+          <div class="works__link">
+            <img src=" ../images/projects/tooltips.jpg" class="works__image" alt="Social tooltips" />
+            <div class="works__active">
+              <a class="works__active-link" href="https://vestop.github.io/social-icons-tooltip/" target="_blank">Visit</a>
+              <a class="works__active-link" href="https://github.com/vestop/social-icons-tooltip/" target="_blank">Sources</a>
+            </div>
+          </div>
+          <div class="works__desc">
+            <h4 class="works__name">Social Icon Tooltips</h4>
+            <p class="works__type">Template</p>
+            <div class="works__tags">
+              <span class="works__tag">HTML5</span>
+              <span class="works__tag">CSS3</span>
+              <span class="works__tag">BEM</span>
+              <span class="works__tag">Responsive</span>
+            </div>
+          </div>
+        </li>
+        <!--- =====  WORK ITEM  ===== -->
+        <li class="works__item">
+          <div class="works__link">
+            <img src=" ../images/projects/airpods.jpg" class="works__image" alt="Airpods website" />
+            <div class="works__active">
+              <a class="works__active-link" href="https://vestop.github.io/airpods-design-website/" target="_blank">Visit</a>
+              <a class="works__active-link" href="https://github.com/vestop/airpods-design-website/" target="_blank">Sources</a>
+            </div>
+          </div>
+          <div class="works__desc">
+            <h4 class="works__name">Airpods Design Website</h4>
+            <p class="works__type">Template</p>
+            <div class="works__tags">
+              <span class="works__tag">HTML5</span>
+              <span class="works__tag">CSS3</span>
+              <span class="works__tag">BEM</span>
+              <span class="works__tag">Responsive</span>
+              <span class="works__tag">CSS Grid</span>
+              <span class="works__tag">JavaScript</span>
+              <span class="works__tag">GSAP</span>
+              <span class="works__tag">ScrollMagic</span>
+            </div>
+          </div>
+        </li>
+        <!--- =====  WORK ITEM  ===== -->
+        <li class="works__item">
+          <div class="works__link">
+            <img src=" ../images/projects/arrivial.jpg" class="works__image" alt="E-commerce website" />
+            <div class="works__active">
+              <a class="works__active-link" href="https://vestop.github.io/responsive-ecommerce-website/" target="_blank">Visit</a>
+              <a class="works__active-link" href="https://github.com/vestop/responsive-ecommerce-website/" target="_blank">Sources</a>
+            </div>
+          </div>
+          <div class="works__desc">
+            <h4 class="works__name">E-Commerce Website</h4>
+            <p class="works__type">Template</p>
+            <div class="works__tags">
+              <span class="works__tag">HTML5</span>
+              <span class="works__tag">CSS3</span>
+              <span class="works__tag">Mobile First</span>
+              <span class="works__tag">BEM</span>
+              <span class="works__tag">Responsive</span>
+              <span class="works__tag">CSS Grid</span>
+              <span class="works__tag">JavaScript</span>
+            </div>
+          </div>
+        </li>
+        <!--- =====  WORK ITEM  ===== -->
         <li class="works__item">
           <div class="works__link">
             <img src=" ../images/projects/tasty.jpg" class="works__image" alt="Tasty" />
@@ -65,12 +181,12 @@
               <span class="works__tag">Responsive</span>
               <span class="works__tag">CSS Grid</span>
               <span class="works__tag">JavaScript</span>
+              <span class="works__tag">ScrollReveal.js</span>
             </div>
           </div>
         </li>
-        <!-- ===   END WORK ITEM  === -->
-        <!--- ===    WORK ITEM    === -->
-        <li class="works__item">
+        <!--- =====  WORK ITEM  ===== -->
+        <li class="works__item" data-comp="comp">
           <div class="works__link">
             <img src=" ../images/projects/product-card.jpg" class="works__image" alt="drag drop" />
             <div class="works__active">
@@ -91,9 +207,8 @@
             </div>
           </div>
         </li>
-        <!-- ===   END WORK ITEM  === -->
-        <!--- ===    WORK ITEM    === -->
-        <li class="works__item">
+        <!--- =====  WORK ITEM  ===== -->
+        <li class="works__item" data-comp="comp">
           <div class="works__link">
             <img src=" ../images/projects/drag-n-drop.jpg" class="works__image" alt="drag drop" />
             <div class="works__active">
@@ -116,8 +231,31 @@
             </div>
           </div>
         </li>
-        <!-- ===   END WORK ITEM  === -->
-        <!--- ===    WORK ITEM    === -->
+        <!--- =====  WORK ITEM  ===== -->
+        <li class="works__item">
+          <div class="works__link">
+            <img src=" ../images/projects/model-page.jpg" class="works__image" alt="Model page" />
+            <div class="works__active">
+              <a class="works__active-link" href="https://vestop.github.io/model-landing-page/" target="_blank">Visit</a>
+              <a class="works__active-link" href="https://github.com/vestop/model-landing-page/" target="_blank">Sources</a>
+            </div>
+          </div>
+          <div class="works__desc works__desc--9">
+            <h4 class="works__name">Model Page</h4>
+            <p class="works__type">Template</p>
+            <div class="works__tags">
+              <span class="works__tag">HTML5</span>
+              <span class="works__tag">CSS3</span>
+              <span class="works__tag">SASS</span>
+              <span class="works__tag">BEM</span>
+              <span class="works__tag">Responsive</span>
+              <span class="works__tag">JavaScript</span>
+              <span class="works__tag">GSAP</span>
+              <span class="works__tag">HoverEffect</span>
+            </div>
+          </div>
+        </li>
+        <!--- =====  WORK ITEM  ===== -->
         <li class="works__item">
           <div class="works__link">
             <img src=" ../images/projects/coffee-page.jpg" class="works__image" alt="Coffee page" />
@@ -141,9 +279,54 @@
             </div>
           </div>
         </li>
-        <!-- ===   END WORK ITEM  === -->
-        <!--- ===    WORK ITEM    === -->
+        <!--- =====  WORK ITEM  ===== -->
         <li class="works__item">
+          <div class="works__link">
+            <img src=" ../images/projects/lamborghini-page.jpg" class="works__image" alt="Lamborghini page" />
+            <div class="works__active">
+              <a class="works__active-link" href="https://vestop.github.io/lamborghini-page/" target="_blank">Visit</a>
+              <a class="works__active-link" href="https://github.com/vestop/lamborghini-page/" target="_blank">Sources</a>
+            </div>
+          </div>
+          <div class="works__desc works__desc--8">
+            <h4 class="works__name">Lamborghini Landing Page</h4>
+            <p class="works__type">Template</p>
+            <div class="works__tags">
+              <span class="works__tag">HTML5</span>
+              <span class="works__tag">CSS3</span>
+              <span class="works__tag">SASS</span>
+              <span class="works__tag">BEM</span>
+              <span class="works__tag">Responsive</span>
+              <span class="works__tag">JavaScript</span>
+              <span class="works__tag">CSS Grid</span>
+            </div>
+          </div>
+        </li>
+        <!--- =====  WORK ITEM  ===== -->
+        <li class="works__item">
+          <div class="works__link">
+            <img src=" ../images/projects/mountains.jpg" class="works__image" alt="Parallax Effect" />
+            <div class="works__active">
+              <a class="works__active-link" href="https://vestop.github.io/parallax-scrolling-website/" target="_blank">Visit</a>
+              <a class="works__active-link" href="https://github.com/vestop/parallax-scrolling-website/" target="_blank">Sources</a>
+            </div>
+          </div>
+          <div class="works__desc">
+            <h4 class="works__name">Parallax Scrolling Website</h4>
+            <p class="works__type">Template</p>
+            <div class="works__tags">
+              <span class="works__tag">HTML5</span>
+              <span class="works__tag">CSS3</span>
+              <span class="works__tag">SASS</span>
+              <span class="works__tag">BEM</span>
+              <span class="works__tag">Responsive</span>
+              <span class="works__tag">GSAP</span>
+              <span class="works__tag">RELLAX.js</span>
+            </div>
+          </div>
+        </li>
+        <!--- =====  WORK ITEM  ===== -->
+        <li class="works__item" data-comp="comp">
           <div class="works__link">
             <img src=" ../images/projects/sidebar-menu.jpg" class="works__image" alt="Sidebar Menu" />
             <div class="works__active">
@@ -164,9 +347,8 @@
             </div>
           </div>
         </li>
-        <!-- ===   END WORK ITEM  === -->
-        <!--- ===    WORK ITEM    === -->
-        <li class="works__item">
+        <!--- =====  WORK ITEM  ===== -->
+        <li class="works__item" data-comp="comp">
           <div class="works__link">
             <img src=" ../images/projects/dropdown-menu.jpg" class="works__image" alt="Dropdown Menu" />
             <div class="works__active">
@@ -186,9 +368,8 @@
             </div>
           </div>
         </li>
-        <!-- ===   END WORK ITEM  === -->
-        <!--- ===    WORK ITEM    === -->
-        <li class="works__item">
+        <!--- =====  WORK ITEM  ===== -->
+        <li class="works__item" data-comp="comp">
           <div class="works__link">
             <img src=" ../images/projects/product-card-ui.jpg" class="works__image" alt="ProductCard" />
             <div class="works__active">
@@ -207,9 +388,8 @@
             </div>
           </div>
         </li>
-        <!-- ===   END WORK ITEM  === -->
-        <!--- ===    WORK ITEM    === -->
-        <li class="works__item">
+        <!--- =====  WORK ITEM  ===== -->
+        <li class="works__item" data-comp="comp">
           <div class="works__link">
             <img src=" ../images/projects/card-nike.jpg" class="works__image" alt="HelloD" />
             <div class="works__active">
@@ -230,8 +410,7 @@
             </div>
           </div>
         </li>
-        <!-- ===   END WORK ITEM  === -->
-        <!--- ===    WORK ITEM    === -->
+        <!--- =====  WORK ITEM  ===== -->
         <li class="works__item">
           <div class="works__link">
             <img src=" ../images/projects/hellodribbble.jpg" class="works__image" alt="HelloD" />
@@ -252,9 +431,8 @@
             </div>
           </div>
         </li>
-        <!-- ===   END WORK ITEM  === -->
-        <!--- ===    WORK ITEM    === -->
-        <li class="works__item">
+        <!--- =====  WORK ITEM  ===== -->
+        <li class="works__item" data-comp="comp">
           <div class="works__link">
             <img src=" ../images/projects/loginpage.jpg" class="works__image" alt="LoginPage" />
             <div class="works__active">
@@ -272,8 +450,7 @@
             </div>
           </div>
         </li>
-        <!-- ===   END WORK ITEM  === -->
-        <!--- ===    WORK ITEM    === -->
+        <!--- =====  WORK ITEM  ===== -->
         <li class="works__item">
           <div class="works__link">
             <img src=" ../images/projects/vibo.jpg" class="works__image" alt="Vibo" />
@@ -294,9 +471,8 @@
             </div>
           </div>
         </li>
-        <!-- ===   END WORK ITEM  === -->
-        <!--- ===    WORK ITEM    === -->
-        <li class="works__item">
+        <!--- =====  WORK ITEM  ===== -->
+        <li class="works__item" data-real="real">
           <div class="works__link">
             <img src=" ../images/projects/sto-auto.jpg" class="works__image" alt="Sto-Auto" />
             <div class="works__active">
@@ -317,9 +493,8 @@
             </div>
           </div>
         </li>
-        <!-- ===   END WORK ITEM  === -->
-        <!--- ===    WORK ITEM    === -->
-        <li class="works__item">
+        <!--- =====  WORK ITEM  ===== -->
+        <li class="works__item" data-real="real">
           <div class="works__link">
             <img src=" ../images/projects/resolva.jpg" class="works__image" alt="Resolva" />
             <div class="works__active">
@@ -340,9 +515,8 @@
             </div>
           </div>
         </li>
-        <!-- ===   END WORK ITEM  === -->
-        <!--- ===    WORK ITEM    === -->
-        <li class="works__item">
+        <!--- =====  WORK ITEM  ===== -->
+        <li class="works__item" data-real="real">
           <div class="works__link">
             <img src=" ../images/projects/axora.jpg" class="works__image" alt="axora" />
             <div class="works__active">
@@ -361,9 +535,8 @@
             </div>
           </div>
         </li>
-        <!-- ===   END WORK ITEM  === -->
 
-        <!--- ===    WORK ITEM    === -->
+        <!--- =====  WORK ITEM  ===== -->
         <li class="works__item">
           <div class="works__link">
             <img src=" ../images/projects/trillo.jpg" class="works__image" alt="trillo" />
@@ -385,8 +558,7 @@
             </div>
           </div>
         </li>
-        <!-- ===   END WORK ITEM  === -->
-        <!--- ===    WORK ITEM    === -->
+        <!--- =====  WORK ITEM  ===== -->
         <li class="works__item">
           <div class="works__link">
             <img src=" ../images/projects/natours.jpg" class="works__image" alt="natours" />
@@ -408,10 +580,9 @@
             </div>
           </div>
         </li>
-        <!-- ===   END WORK ITEM  === -->
 
-        <!--- ===    WORK ITEM    === -->
-        <li class="works__item">
+        <!--- =====  WORK ITEM  ===== -->
+        <li class="works__item" data-real="real">
           <div class="works__link">
             <img src=" ../images/projects/crimea.jpg" class="works__image" alt="crimea" />
             <div class="works__active">
@@ -433,9 +604,8 @@
             </div>
           </div>
         </li>
-        <!-- ===   END WORK ITEM  === -->
 
-        <!--- ===    WORK ITEM    === -->
+        <!--- =====  WORK ITEM  ===== -->
         <li class="works__item">
           <div class="works__link">
             <img src="../images/projects/surf.jpg" class="works__image" alt="surf" />
@@ -457,11 +627,7 @@
             </div>
           </div>
         </li>
-        <!-- ===   END WORK ITEM  === -->
-
-
-
-        <!--- ===    WORK ITEM    === -->
+        <!--- =====  WORK ITEM  ===== -->
         <li class="works__item">
           <div class="works__link">
             <img src="../images/projects/mavic.jpg" class="works__image" alt="mavic" />
@@ -482,9 +648,7 @@
             </div>
           </div>
         </li>
-        <!-- ===   END WORK ITEM  === -->
-
-        <!--- ===    WORK ITEM    === -->
+        <!--- =====  WORK ITEM  ===== -->
         <li class="works__item">
           <div class="works__link">
             <img src="../images/projects/wp-page.jpg" class="works__image" alt="wppage" />
@@ -504,10 +668,7 @@
             </div>
           </div>
         </li>
-        <!-- ===   END WORK ITEM  === -->
-
-
-        <!--- ===    WORK ITEM    === -->
+        <!--- =====  WORK ITEM  ===== -->
         <li class="works__item">
           <div class="works__link">
             <img src="../images/projects/cuba.jpg" class="works__image" alt="cuba" />
@@ -527,9 +688,7 @@
             </div>
           </div>
         </li>
-        <!-- ===   END WORK ITEM  === -->
-
-        <!--- ===    WORK ITEM    === -->
+        <!--- =====  WORK ITEM  ===== -->
         <li class="works__item">
           <div class="works__link">
             <img src="../images/projects/device.jpg" class="works__image" alt="device" />
@@ -549,9 +708,7 @@
             </div>
           </div>
         </li>
-        <!-- ===   END WORK ITEM  === -->
-
-        <!--- ===    WORK ITEM    === -->
+        <!--- =====  WORK ITEM  ===== -->
         <li class="works__item">
           <div class="works__link">
             <img src="../images/projects/gllacy.jpg" class="works__image" alt="gllacy" />
@@ -569,8 +726,7 @@
             </div>
           </div>
         </li>
-        <!-- ===   END WORK ITEM  === -->
-        <!--- ===    WORK ITEM    === -->
+        <!--- =====  WORK ITEM  ===== -->
         <li class="works__item">
           <div class="works__link">
             <img src="../images/projects/barbershop.jpg" class="works__image" alt="barbershop" />
@@ -590,12 +746,7 @@
             </div>
           </div>
         </li>
-        <!-- ===   END WORK ITEM  === -->
-
-
-
-
-        <!--- ===    WORK ITEM    === -->
+        <!--- =====  WORK ITEM  ===== -->
         <li class="works__item">
           <div class="works__link">
             <img src="../images/projects/bussinespage.jpg" class="works__image" alt="bussines" />
@@ -613,13 +764,14 @@
               <span class="works__tag">Responsive</span>
               <span class="works__tag">JQuery</span>
               <span class="works__tag">Carousel</span>
+              <span class="works__tag">Popup</span>
             </div>
           </div>
         </li>
-        <!-- ===   END WORK ITEM  === -->
       </ul>
     </section>
   </main>
+  <!--- =====  FOOTER  ===== -->
   <footer class="footer">
     <div class="footer__inner">
       <nav class="footer__social">
@@ -637,17 +789,18 @@
         </a>
       </nav>
       <div class="footer__copyright">
-        <p>&reg; All Rights Reserved.</p>
-        <p>&copy; Copyright 2020, Javohir Shodiyev.</p>
+        <p>&copy; 2020 Copyright, &reg; All Rights Reserved.</p>
       </div>
     </div>
   </footer>
+  <!--- =====  Preload  ===== -->
   <div class="preload">
     <div class="loader"></div>
   </div>
+  <!--- =====  Bacground canvas  ===== -->
   <canvas class="background"></canvas>
 
-
+  <!--- =====  JS  ===== -->
   <script src="../js/libs.min.js"></script>
   <script src="../js/index.js"></script>
 </body>

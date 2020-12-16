@@ -27,21 +27,21 @@
   }
   &__btn {
     z-index: 5;
-    display: block;
     margin-bottom: 20px;
-    padding: 10px 30px;
     font-weight: 600;
     font-size: 15px;
     border: 3px solid $white;
-    border-radius: 15px;
+    background-color: transparent;
+    border-radius: 100px;
     outline: none;
-    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 30px;
+    transition: 0.3s;
     &:hover,
     &:focus {
       color: $black;
       background-color: $white;
-      border-radius: 30px;
-      transform: scale(0.9);
     }
   }
 }
@@ -67,5 +67,28 @@
     &__btn {
       font-size: 25px;
     }
+  }
+}
+
+.btn {
+  &__visible {
+    transition: transform 0.3s;
+    display: inline-block;
+  }
+
+  &__hidden {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transition: top 0.3s;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover &__hidden {
+    top: 50%;
+  }
+
+  &:hover &__visible {
+    transform: translateY(120%);
   }
 }

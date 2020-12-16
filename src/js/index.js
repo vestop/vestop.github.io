@@ -46,3 +46,57 @@ menuBtn.addEventListener("click", (e) => {
   list.classList.toggle("list-open");
   // lang.classList.toggle("visable");
 });
+
+///WORKS TABS SWITCHER
+const latest = document.querySelector(".latest");
+const component = document.querySelector(".component");
+const realTab = document.querySelector(".real");
+
+const tabItem = document.querySelectorAll(".works__item");
+
+// Turns node list into an array
+const tabItemArray = Array.from(tabItem);
+
+if (latest) {
+  latest.addEventListener("click", showAll);
+  function showAll() {
+    tabItemArray.forEach((li) => {
+      li.classList.remove("remove");
+      li.classList.add("show");
+    });
+
+    latest.classList.add("works__tab--active");
+    component.classList.remove("works__tab--active");
+    realTab.classList.remove("works__tab--active");
+  }
+
+  component.addEventListener("click", showComps);
+  function showComps() {
+    tabItemArray.forEach((li) => {
+      li.classList.remove("remove");
+
+      if (!li.dataset.comp) {
+        li.classList.add("remove");
+      }
+    });
+
+    latest.classList.remove("works__tab--active");
+    component.classList.add("works__tab--active");
+    realTab.classList.remove("works__tab--active");
+  }
+
+  realTab.addEventListener("click", showReal);
+  function showReal() {
+    tabItemArray.forEach((li) => {
+      li.classList.remove("remove");
+
+      if (!li.dataset.real) {
+        li.classList.add("remove");
+      }
+    });
+
+    latest.classList.remove("works__tab--active");
+    component.classList.remove("works__tab--active");
+    realTab.classList.add("works__tab--active");
+  }
+}
